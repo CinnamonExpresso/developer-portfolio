@@ -3,7 +3,7 @@ title: 'Personal Website'
 lang: "React • TypeScript • Nextjs • Sass • Bootstrap"
 preview: "My personal website and developer porfiolo"
 thumbnail: "PersonalWebsiteTn"
-source: "https://github.com/AtomicExpresso/developer-portfolio"
+source: "https://github.com/CinnamonExpresso/developer-portfolio"
 live: "/"
 ---
 

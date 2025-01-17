@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import ProfilePic from '../../assets/images/profile-pic.webp';
 import Twitter from '../../assets/images/icons/twitter.svg';
 import Youtube from '../../assets/images/icons/youtube.svg';
 import Linkedin from '../../assets/images/icons/linkedin.svg';

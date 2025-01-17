@@ -3,7 +3,7 @@ title: 'MovieBox'
 lang: "MERN • TypeScript • Nextjs • Scss • Bootstrap"
 preview: "A fullstack netflix clone"
 thumbnail: "MovieBox"
-source: "https://github.com/AtomicExpresso/movie-app"
+source: "https://github.com/CinnamonExpresso/movie-app"
 live: "https://moviebox-nextjs-sooty.vercel.app/"
 ---
 

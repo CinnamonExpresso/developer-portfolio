@@ -3,8 +3,8 @@ title: 'Tube Fetcher'
 lang: "Python • Customtkinter • Pytube • PyInstaller"
 preview: "A free and open source program to archive/download YouTube videos. "
 thumbnail: "TubeFetcher"
-source: "https://github.com/AtomicExpresso/TubeFetcher"
-live: "https://github.com/atomicexpresso/TubeFetcher/releases"
+source: "https://github.com/CinnamonExpresso/TubeFetcher"
+live: "https://github.com/Cinnamonexpresso/TubeFetcher/releases"
 ---
 
 ### **Description**
