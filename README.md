@@ -25,7 +25,7 @@
 1 ) Clone this repo locally:
 
 ```
-git clone https://github.com/AtomicExpresso/developer-portfolio.git
+git clone https://github.com/CinnamonExpresso/developer-portfolio.git
 ```
 
 2 ) Setting up the project:
