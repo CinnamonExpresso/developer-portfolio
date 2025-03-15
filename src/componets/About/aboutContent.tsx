@@ -73,13 +73,16 @@ function AboutContent(){
         <hr></hr>
         <div className="about-text">
           <p>
-            I&#39;m a university student and passionate full-stack software developer with a specialization in Python and various libaries, complemented by a strong foundation in general software development. My journey began with front-end technologies like React, Nextjs, CSS, and SCSS, and soon expanded into back-end, desktop applications, and game development.
+            I&#39;m a university honors student studying Physics and Applied Mathematics, with a strong foundation in theoretical and computational problem-solving. My academic interests lie in mathematical modeling, simulations, and algorithmic approaches to physics, which naturally complement my expertise in full-stack development and software engineering. 
           </p>
           <p>
-            I&#39;ve worked on a variety of programming projects, from web applications and mobile apps to video games and desktop applications. I&#39;m proficient in Python, JavaScript, PostgreSQL, and C++, and I enjoy learning new tools and technologies to improve my work. Throughout each project, I take a methodical approach to programming ensuring I write clean, effective and well-documented code that&#39;s easy to maintain and scales well for future growth.
+            My programming journey began with front-end technologies like React, Next.js, and CSS before expanding into scientific computing, back-end systems, desktop applications, and game development. Over time, I&#39;ve worked on projects ranging from numerical simulations and physics-based modeling to web applications, mobile apps, and video games, honing my proficiency in Python, Java, JavaScript, PostgreSQL, and C++. 
           </p>
           <p>
-            I enjoy working on projects, where I can focus on every aspect of development, from planning to final implementation. Whether it&#39;s experimenting with new ideas or tackling complex challenges, I&#39;m always looking for ways to improve my skills and build something meaningful.
+            I take a methodical and analytical approach to programming, leveraging my math and physics background to write efficient, structured, and scalable code. Whether it&#39;s implementing computational methods for solving equations, developing physics simulations, or optimizing algorithms, I aim to create software that is both powerful and elegant. I thrive in projects where I oversee development from concept to implementation. 
+          </p>
+          <p>
+            In my free time, I enjoy exploring mathematical theories, reading literature, writing, watching documentaries, and going for long walks. 
           </p>
         </div>
       </div>
