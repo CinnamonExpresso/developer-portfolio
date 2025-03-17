@@ -26,7 +26,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.pumped.dev/blog/posts/PostOne</loc>
+    <loc>https://www.pumped.dev/blog/posts/oop-in-python</loc>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
@@ -35,13 +35,23 @@
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
-  <url>
-    <loc>https://www.pumped.dev/project/0</loc>
+    <url>
+    <loc>https://www.pumped.dev/blog/posts/queues</loc>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
-    <loc>https://www.pumped.dev/project/1</loc>
+    <loc>https://www.pumped.dev/projects/project/personal-website</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://www.pumped.dev/projects/project/tube-fetcher</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+    <url>
+    <loc>https://www.pumped.dev/projects/project/movie-box</loc>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>

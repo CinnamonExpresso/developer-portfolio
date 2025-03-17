@@ -8,7 +8,7 @@ export default function NotFound(){
     <div className="error-page">
       <Image src={ErrorImage} alt="404 image"></Image>
       <h1>404 - Page not found!</h1>
-      <p>The page you are looking for might have been removed, had its address changed or dosent exist</p>
+      <p>The page you are looking for might have been removed, had its address changed, or dosent exist</p>
       <Link href={"/"}><button className="btn btn-primary">Go to home</button></Link>
     </div>
   )
