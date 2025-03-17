@@ -64,6 +64,6 @@ I may update this policy periodically. Any changes will be posted on this page w
 
 If you have any questions about this Privacy Policy, contact me at:
 
-(contact email...coming soon)  
+contact@pumped.dev  
 pumped.dev
 

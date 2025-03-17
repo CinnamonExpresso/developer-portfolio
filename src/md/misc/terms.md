@@ -54,6 +54,5 @@ These Terms of Service are governed by and construed in accordance with the laws
 
 If you have any questions about these Terms of Service, please contact me at:
 
-(contact email...coming soon) 
-
+contact@pumped.dev
 pumped.dev
