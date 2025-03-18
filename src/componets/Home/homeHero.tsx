@@ -3,13 +3,15 @@ import React from 'react'
 import Twitter from '../../assets/images/icons/twitter.svg';
 import Youtube from '../../assets/images/icons/youtube.svg';
 import Linkedin from '../../assets/images/icons/linkedin.svg';
-import Discord from '../../assets/images/icons/discord.svg';
+import Email from '../../assets/images/icons/email.svg';
 import WhiteWave from '../../assets/images/decorations/banner-wave-white.svg';
 import Image from 'next/image';
 import { ReactTyped } from "react-typed";
 
 //Displays at the top of the home page
 function HomeHero() {
+  const emailLink = process.env.CONTACT_EMAIL;
+
   return (
     <div className="hero-container">
       <div className='hero-group'>
@@ -33,8 +35,8 @@ function HomeHero() {
             <a href="#">
               <Image src={Linkedin} alt='Linkedin' draggable='false'></Image>
             </a>
-            <a href="#">
-              <Image src={Discord} alt='Discord' draggable='false'></Image>
+            <a href={`mailto:${emailLink}`}>
+              <Image src={Email} alt='Email' draggable='false'></Image>
             </a>
           </div>
         </div>

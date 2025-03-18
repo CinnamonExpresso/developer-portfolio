@@ -2,12 +2,14 @@ import React from 'react';
 import Twitter from '../../assets/images/icons/twitter.svg';
 import Youtube from '../../assets/images/icons/youtube.svg';
 import Linkedin from '../../assets/images/icons/linkedin.svg';
-import Discord from '../../assets/images/icons/discord.svg';
+import Email from '../../assets/images/icons/email.svg';
 import Image from 'next/image';
 import Link from "next/link";
 
 //Appears at the bottom of the page
 function Footer(){
+  const emailLink = process.env.CONTACT_EMAIL;
+
   return (
     <div className="footer">
       <div className="footer-content">
@@ -17,7 +19,7 @@ function Footer(){
             <a href='https://twitter.com/pumpeddev'><Image src={Twitter} alt='Twitter' draggable='false'></Image></a>
             <a href='#'><Image src={Youtube} alt='Youtube' draggable='false'></Image></a>
             <a href='#'><Image src={Linkedin} alt='Linkedin' draggable='false'></Image></a>
-            <a href='#'><Image src={Discord} alt='Discord' draggable='false'></Image></a>
+            <a href={`mailto:${emailLink}`}><Image src={Email} alt='email' draggable='false'></Image></a>
           </div>
         </div>
         <div className='footer-col-links'>
