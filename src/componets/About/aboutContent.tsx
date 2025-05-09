@@ -73,7 +73,7 @@ function AboutContent(){
         <hr></hr>
         <div className="about-text">
           <p>
-            I&#39;m a university honors student studying Physics and Applied Mathematics, with a strong foundation in theoretical and computational problem-solving. My academic interests lie in mathematical modeling, simulations, and algorithmic approaches to physics, which naturally complement my expertise in full-stack development and software engineering. 
+            I&#39;m a university honors student studying Physics and Mathematics, with a minor in Astronomy. I have a strong foundation in theoretical and computational problem-solving. My academic interests lie in mathematical modeling, simulations, and algorithmic approaches to physics, which naturally complement my expertise in full-stack development and software engineering. 
           </p>
           <p>
             My programming journey began with front-end technologies like React, Next.js, and CSS before expanding into scientific computing, back-end systems, desktop applications, and game development. Over time, I&#39;ve worked on projects ranging from numerical simulations and physics-based modeling to web applications, mobile apps, and video games, honing my proficiency in Python, Java, JavaScript, PostgreSQL, and C++. 
@@ -82,7 +82,7 @@ function AboutContent(){
             I take a methodical and analytical approach to programming, leveraging my math and physics background to write efficient, structured, and scalable code. Whether it&#39;s implementing computational methods for solving equations, developing physics simulations, or optimizing algorithms, I aim to create software that is both powerful and elegant. I thrive in projects where I oversee development from concept to implementation. 
           </p>
           <p>
-            In my free time, I enjoy exploring mathematical theories, reading literature, writing, watching documentaries, and going for long walks. 
+            In my free time, I enjoy exploring various mathematical concepts, reading literature, writing, gardening, watching documentaries, and going for long walks. 
           </p>
         </div>
       </div>
