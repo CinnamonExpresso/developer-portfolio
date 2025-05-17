@@ -1,24 +1,13 @@
 {
 "SkillSet": [
 {
-  "id": 1,
-  "itemName": "HTML 5",
-  "img": "HtmlIcon"
-},
-{
-  "id": 2,
-  "itemName": "CSS 3",
-  "img": "CssIcon"
-},
-{
   "id": 3,
   "itemName": "JavaScript",
   "img": "JavaScriptIcon"
 },
 {
-  "id": 4,
-  "itemName": "Bootstrap",
-  "img": "BootStrapIcon"
+  "id": 15,
+  "itemName": "Python"
 },
 {
   "id": 5,
@@ -26,38 +15,12 @@
   "img": "ReactIcon"
 },
 {
-  "id": 6,
-  "itemName": "Node",
-  "img": "Nodejs"
-},
-{
-  "id": 7,
-  "itemName": "Scss",
-  "img": "ScssIcon"
-},
-{
-  "id": 8,
-  "itemName": "TypeScript",
-  "img": "Typescriptbar"
-},
-{
-  "id": 9,
-  "itemName": "NextJs",
-  "img": "ReactNativeBar"
-},
-{
-  "id": 10,
-  "itemName": "Tkinter",
-  "img": "TkinterIcon"
-},
-{
-  "id": 11,
-  "itemName": "Webpack",
-  "img": "WebpackIcon"
-},
-{
   "id": 12,
-  "itemName": "Web Development"
+  "itemName": "Software Development"
+},
+{
+  "id": 13,
+  "itemName": "Mathematics"
 },
 {
   "id": 13,
@@ -65,15 +28,15 @@
 },
 {
   "id": 14,
-  "itemName": "UI/UX Design"
-},
-{
-  "id": 15,
-  "itemName": "Python"
+  "itemName": "Astronomy"
 },
 {
   "id": 16,
-  "itemName": "Mongo DB"
+  "itemName": "Research"
+},
+{
+  "id": 16,
+  "itemName": "Relational DB"
 }
 ]
 }

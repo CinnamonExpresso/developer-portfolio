@@ -45,6 +45,9 @@ function Footer(){
                 <Link href='/contact'>Contact</Link>
               </li>
               <li>
+                <Link href='/awards'>Awards & Honors</Link>
+              </li>
+              <li>
                 <Link href='/legal/terms'>Terms</Link>
               </li>
               <li>

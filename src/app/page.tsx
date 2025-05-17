@@ -26,7 +26,7 @@ function HomePage() {
           <Image src={ProjectIcon} draggable='false' alt="Projects icon"></Image>
           <h1>My Projects</h1>
           </div>
-          <p>Heres a list of my best projects ive developed and worked on</p>
+          <p>Heres a assorted list of projects i&#39;ve developed</p>
           <hr></hr>
         <ProjectContainer/>
       </div>

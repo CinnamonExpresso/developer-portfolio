@@ -9,7 +9,7 @@ import '@/app/styles/blog-globals.scss'
 
 export const metadata: Metadata = {
   title: "My projects",
-  description: "Heres a full list of my best public projects. Build using a wide range of languages and libaries",
+  description: "Heres a full list of my public projects. Built using a wide range of languages and libaries",
 };
 
 function ProjectPage() {

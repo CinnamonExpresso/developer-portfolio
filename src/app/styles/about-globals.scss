@@ -37,6 +37,10 @@ $-moz-osx-font-smoothing: grayscale;
   }
 }
 
+.awards-list{
+  margin-left: 15px;
+}
+
 .about-title{
   display: flex;
   flex-direction: row;
@@ -44,7 +48,6 @@ $-moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $--header-text-color-clicked;
   margin: 20px auto;
-  font-family: 'Jhal-Muri';
   gap: 10px;
 
   & img{
