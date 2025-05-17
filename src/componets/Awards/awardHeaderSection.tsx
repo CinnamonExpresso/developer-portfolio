@@ -19,11 +19,11 @@ function AwardHeaderSection(){
         <div className='awards-list'>
           <h2>Awards</h2>
           <ul>
-            <li>Dean's List Spring 2024</li>
-            <li>President's List Fall 2024</li>
-            <li>Dean's List Fall 2024</li>
-            <li>President's List Spring 2025</li>
-            <li>Dean's List Fall Spring 2025</li>
+            <li>Dean&apos;s List Spring 2024</li>
+            <li>President&apos;s List Fall 2024</li>
+            <li>Dean&apos;s List Fall 2024</li>
+            <li>President&apos;s List Spring 2025</li>
+            <li>Dean&apos;s List Fall Spring 2025</li>
           </ul>
         </div>
         <div className='awards-list'>
