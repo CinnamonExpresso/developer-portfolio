@@ -50,7 +50,11 @@ I may update these Terms of Service from time to time. Any changes will be poste
 
 These Terms of Service are governed by and construed in accordance with the laws of Canada, without regard to its conflict of law principles.
 
-### 10. Contact Information
+### 10. Artificial Intelligence Policy
+
+Using any of my work whether its in written, video, or software form for the purposes of trainning or developing Artifical Intelligence models without my written consent; is strictly forbidden and will result in immediate blacklisting of your IP and possible legal action. 
+
+### 11. Contact Information
 
 If you have any questions about these Terms of Service, please contact me at:
 

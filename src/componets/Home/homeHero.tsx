@@ -20,7 +20,7 @@ function HomeHero() {
           <div style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
             <h2>I&apos;m a</h2>
             <h2>
-              <ReactTyped strings={["Student", "Mathematician", "Software developer", "Desktop app developer"]} typeSpeed={100} backSpeed={50} loop />
+              <ReactTyped strings={["Software developer", "Math student", "Physics student"]} typeSpeed={100} backSpeed={50} loop />
             </h2>
           </div>
           <p>University Honors Student</p>
