@@ -32,7 +32,7 @@ class Car:
     self.price = price
 
 
-tesla = Car("tesla", "model X", 50300)
+honda = Car("honda", "model XYZ", 50300)
 ```
 
 
@@ -58,9 +58,9 @@ class Car:
     print(f"{self.name}, {self.model} is {self.price}")
 
 
-tesla = Car("tesla", "model X", 50300)
-tesla.display_info()
-tesla.test_drive()
+honda = Car("honda", "model XYZ", 50300)
+honda.display_info()
+honda.test_drive()
 ```
 
 In the above example we created two methods, which can be utilized by the instances. To call a method you use dot notation, followed by the name of the method. If you want to use class attributes within that method you simply use the self keyword for the first parameter.
