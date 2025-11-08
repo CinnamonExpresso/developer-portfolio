@@ -73,7 +73,7 @@ function AboutContent(){
         <hr></hr>
         <div className="about-text">
           <p>
-            I&#39;m a university honors student studying Physics and Mathematics, with a minor in Astronomy. I have a strong foundation in theoretical and computational problem-solving. My academic interests lie in mathematical modeling, simulations, and algorithmic approaches to physics, which naturally complement my expertise in full-stack development and software engineering. 
+            I&#39;m a university honors student studying Physics and Mathematics, with a minor in Philosophy. I have a strong foundation in theoretical and computational problem-solving. My academic interests lie in mathematical modeling, theoretical physics, and simulations. 
           </p>
           <p>
             My programming journey began with front-end technologies like React, Next.js, and CSS before expanding into scientific computing, back-end systems, desktop applications, and game development. Over time, I&#39;ve worked on projects ranging from numerical simulations and physics-based modeling to web applications, mobile apps, and video games, honing my proficiency in Python, Java, JavaScript, PostgreSQL, and C++. 
