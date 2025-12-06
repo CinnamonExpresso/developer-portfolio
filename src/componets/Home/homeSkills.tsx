@@ -15,9 +15,9 @@ function HomeSkills(){
     )
   }
 
-  const BuildSkillSet = () => SkillSet.SkillSet.map(item => {
+  const BuildSkillSet = () => SkillSet.SkillSet.map((item, i) => {
     return (
-      <CreateSkillItem key={item.id} itemName={item.itemName}/>
+      <CreateSkillItem key={`${item.id}-${i}`} itemName={item.itemName}/>
     )
   })
 

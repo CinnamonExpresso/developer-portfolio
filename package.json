@@ -12,9 +12,9 @@
     "@vercel/analytics": "^1.2.2",
     "bootstrap": "^5.3.3",
     "gray-matter": "^4.0.3",
-    "next": "14.2.3",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^16.0.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
     "react-typed": "^2.0.12",
     "rehype": "^13.0.2",
     "rehype-prism": "^2.3.3",
@@ -25,16 +25,20 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "18.3.18",
-    "@types/react-dom": "^18",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@typescript-eslint/parser": "^7.9.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3",
+    "eslint-config-next": "16.0.7",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-react": "^7.34.1",
     "typescript": "5.7.2"
+  },
+  "overrides": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3"
   }
 }
