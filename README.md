@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+<h1 align="center">Developer Portfoilo ☕</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">My developer portfolio. It showcases the various projects I've worked on and provides a bit about me. Built using TypeScript, Next.js, React, Sass, and Bootstrap, it features mobile support with a navigation bar, dynamic blog pages with markdown, detailed project pages, a contact and about page, an animated dark mode toggle supporting both light and dark modes, and server-side rendering with Next.js.</p>
 
-Currently, two official plugins are available:
+<h3 align="center"><a href="https://www.pumped.dev/"><img src="https://img.shields.io/badge/Preview-26c418?style=for-the-badge&logo=mongodb&logoColor=white"></img></a></h3>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ⚙️
+- Mobile support with navigation bar
+- Dynamic blog page's with markdown support
+- Detailed Projects with dyanmic pages
+- Contact and About page
+- Animated dark mode toggle, supports both light and dark mode
+- Server side rendering using Nextjs
 
-## React Compiler
+## Tech-Stack 📝
+- Typescript
+- Next.js
+- React.js
+- Bootstrap
+- Sass
+- Node.js
+- Graymatter for markdown support
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Quickstart 👍
+1 ) Clone this repo locally:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+git clone https://github.com/CinnamonExpresso/developer-portfolio.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2 ) Setting up the project:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+cd developer-portfolio
+Npm install
+```
+
+3 ) Setting up dev server:
+
+```
+Npm run dev
+```
+
+Server should now be running at localhost
+
+##
+<p align="center">Be sure to 🌟the repo if you found this project useful or helpful</p>
