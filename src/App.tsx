@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import AboutPage from "./pages/aboutPage";
@@ -11,14 +10,8 @@ import BlogPage from "./pages/blog/blogPage";
 import Post from "./pages/blog/post";
 
 const App = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  // Handles darkmode switch
-  const toggleDarkMode = (val:boolean) => {
-    setIsDarkMode(val);
-  };
-
   return (
-    <div className={`default-page-outer-container ${isDarkMode ? "darkmode" : ""}`}>
+    <div className={`default-page-outer-container`}>
       <Navbar/>
       <div className="default-page-content-container">
         <Routes>

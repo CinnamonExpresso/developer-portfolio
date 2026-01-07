@@ -9,9 +9,8 @@ const posts = import.meta.glob('../../data/md/posts/*.md', {
 
 export default function Post() {
   const { post } = useParams()
-  console.log(post)
   const file = Object.entries(posts).find(([path]) =>
-    path.includes(post)
+    path.includes(String(post))
   )
 
   if (!file) {

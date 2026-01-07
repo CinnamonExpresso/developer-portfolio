@@ -18,7 +18,7 @@ export default function ContactPage() {
       </header>
       <section className="contact-content">
         <ContactItem title="Email" link="mailto:contact@pumped.dev" subtitle="contact@pumped.dev" is_custom={true}/>
-        <ContactItem title="GitHub" link="github.com/CinnamonExpresso" subtitle="github.com/CinnamonExpresso"/>
+        <ContactItem title="GitHub" link="github.com/CinnamonExpresso" subtitle="github.com/CinnamonExpresso" is_custom={false}/>
         <ContactItem title="YouTube" link="https://www.youtube.com/@pumped212" subtitle="Coming Soon" is_custom={true}/>
       </section>
     </div>

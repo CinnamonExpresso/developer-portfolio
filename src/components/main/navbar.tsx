@@ -2,10 +2,11 @@ import { useState } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import ThemeToggle from '../misc/themetoggle';
 
+
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [subMenuOpen, setSubMenuOpen] = useState({}); // track mobile submenu
+  const [subMenuOpen, setSubMenuOpen]:any = useState({}); // track mobile submenu
 
   const links = [
     { name: 'Home', href: '/' },
@@ -18,8 +19,8 @@ export default function Navbar() {
     },
   ];
 
-  const toggleSubMenu = (name) => {
-    setSubMenuOpen((prev) => ({ ...prev, [name]: !prev[name] }));
+  const toggleSubMenu = (name:string) => {
+    setSubMenuOpen((prev:any) => ({ ...prev, [name]: !prev[name] }));
   };
 
   return (
@@ -41,7 +42,7 @@ export default function Navbar() {
 
       {/* Links */}
       <div className={`nav-link-content ${menuOpen ? 'active' : ''}`}>
-        {links.map((link) => (
+        {links.map((link:any) => (
           <div
             key={link.name}
             className={`nav-item ${link.subLinks ? 'has-sub' : ''}`}
@@ -64,7 +65,7 @@ export default function Navbar() {
                   subMenuOpen[link.name] ? 'open' : ''
                 }`}
               >
-                {link.subLinks.map((sub) => (
+                {link.subLinks.map((sub:any) => (
                   <a key={sub.name} href={sub.href}>
                     {sub.name}
                   </a>
