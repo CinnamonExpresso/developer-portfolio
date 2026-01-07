@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import AboutPage from "./pages/aboutPage";
 import ProjectPage from "./pages/projectPage";
@@ -14,7 +14,6 @@ const App = () => {
     <div className={`default-page-outer-container`}>
       <Navbar/>
       <div className="default-page-content-container">
-        <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
@@ -23,7 +22,6 @@ const App = () => {
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:post" element={<Post />} />
           </Routes>
-        </BrowserRouter>
         <ScrollButton/>
       </div>
       <Footer/>
