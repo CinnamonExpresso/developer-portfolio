@@ -12,21 +12,21 @@ import Post from "./pages/blog/post";
 const App = () => {
   return (
     <div className={`default-page-outer-container`}>
-      <Navbar/>
+      <Navbar />
       <div className="default-page-content-container">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/projects" element={<ProjectPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/blog" element={<BlogPage />} />
-            <Route path="/blog/:post" element={<Post />} />
-          </Routes>
-        <ScrollButton/>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:post" element={<Post />} />
+        </Routes>
+        <ScrollButton />
       </div>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default App;

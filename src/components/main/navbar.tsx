@@ -1,26 +1,25 @@
-import { useState } from 'react';
-import { useTheme } from '../hooks/useTheme';
-import ThemeToggle from '../misc/themetoggle';
-
+import { useState } from "react";
+import { useTheme } from "../hooks/useTheme";
+import ThemeToggle from "../misc/themetoggle";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [subMenuOpen, setSubMenuOpen]:any = useState({}); // track mobile submenu
+  const [subMenuOpen, setSubMenuOpen]: any = useState({}); // track mobile submenu
 
   const links = [
-    { name: 'Home', href: '/' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Home", href: "/" },
+    { name: "Projects", href: "/projects" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/contact" },
     {
-      name: 'About',
-      href: '/about',
+      name: "About",
+      href: "/about",
     },
   ];
 
-  const toggleSubMenu = (name:string) => {
-    setSubMenuOpen((prev:any) => ({ ...prev, [name]: !prev[name] }));
+  const toggleSubMenu = (name: string) => {
+    setSubMenuOpen((prev: any) => ({ ...prev, [name]: !prev[name] }));
   };
 
   return (
@@ -35,17 +34,17 @@ export default function Navbar() {
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >
-        <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
-        <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
-        <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+        <span className={`bar ${menuOpen ? "open" : ""}`}></span>
+        <span className={`bar ${menuOpen ? "open" : ""}`}></span>
+        <span className={`bar ${menuOpen ? "open" : ""}`}></span>
       </button>
 
       {/* Links */}
-      <div className={`nav-link-content ${menuOpen ? 'active' : ''}`}>
-        {links.map((link:any) => (
+      <div className={`nav-link-content ${menuOpen ? "active" : ""}`}>
+        {links.map((link: any) => (
           <div
             key={link.name}
-            className={`nav-item ${link.subLinks ? 'has-sub' : ''}`}
+            className={`nav-item ${link.subLinks ? "has-sub" : ""}`}
           >
             <a
               href={link.href}
@@ -61,11 +60,9 @@ export default function Navbar() {
 
             {link.subLinks && (
               <div
-                className={`sub-menu ${
-                  subMenuOpen[link.name] ? 'open' : ''
-                }`}
+                className={`sub-menu ${subMenuOpen[link.name] ? "open" : ""}`}
               >
-                {link.subLinks.map((sub:any) => (
+                {link.subLinks.map((sub: any) => (
                   <a key={sub.name} href={sub.href}>
                     {sub.name}
                   </a>

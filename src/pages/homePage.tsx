@@ -1,3 +1,5 @@
+import SmallLst from "../components/misc/smallList"
+
 export default function HomePage() {
   return (
     <div className="container home">
@@ -19,21 +21,12 @@ export default function HomePage() {
             I study applied mathematics. My academic interests
             currently center on linear algebra, real analysis, and
             multivariable calculus, especially where they intersect
-            with physical systems (such as physics).
+            with physical systems.
           </p>
         </section>
 
         {/* Focus areas */}
-        <section className="home-focus">
-          <h2>Current Focus</h2>
-          <ul>
-            <li>Applied Linear Algebra</li>
-            <li>Multivariable & Vector Calculus</li>
-            <li>Mathematics for Physical Systems</li>
-            <li>Technical & Scientific Writing</li>
-          </ul>
-        </section>
-
+        <SmallLst title={"Current Focus"} lst={["Applied Linear Algebra", "Multivariable & Vector Calculus", "Mathematics for Physical Systems", "Technical & Scientific Writing"]}/>
         {/* Featured links */}
         <section className="home-featured">
           <div className="featured-card">

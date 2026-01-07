@@ -1,12 +1,20 @@
-const ProjectCard = ({title, desc, type}:{title:string,desc:string,type:string}) => {
-    return(
-        <div className="project-card">
-          <h2>{title}</h2>
-          <p>{desc}</p>
-          <span className="project-tag">{type}</span>
-        </div>
-    )
-}
+const ProjectCard = ({
+  title,
+  desc,
+  type,
+}: {
+  title: string;
+  desc: string;
+  type: string;
+}) => {
+  return (
+    <div className="project-card">
+      <h2>{title}</h2>
+      <p>{desc}</p>
+      <span className="project-tag">{type}</span>
+    </div>
+  );
+};
 
 export default function ProjectPage() {
   return (
@@ -19,8 +27,12 @@ export default function ProjectPage() {
       </header>
 
       <section className="projects-list">
-        <ProjectCard title="TubeFetcher" desc="A desktop program written in Python to download YouTube videos and audio" type="software"/>
-        </section>
+        <ProjectCard
+          title="TubeFetcher"
+          desc="A desktop program written in Python to download YouTube videos and audio"
+          type="software"
+        />
+      </section>
     </div>
-  )
+  );
 }

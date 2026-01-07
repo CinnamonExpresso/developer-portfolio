@@ -29,7 +29,7 @@ export default function BlogPage() {
       <header className="page-header">
         <h1>Blog</h1>
         <p className="page-subtitle">
-          Notes on mathematics, thinking, and clarity.
+          A collection of some of my writings. Short notes on mathematics, problem-solving, philosophy, and communicating various technical ideas.
         </p>
       </header>
 

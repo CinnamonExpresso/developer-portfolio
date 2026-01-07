@@ -14,9 +14,21 @@ export default function Footer() {
 
       <div className="footer-right">
         <a href="mailto:contact@pumped.dev">Email</a>
-        <a href="https://github.com/CinnamonExpresso" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.youtube.com/@pumped212" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a
+          href="https://github.com/CinnamonExpresso"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.youtube.com/@pumped212"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube
+        </a>
       </div>
     </footer>
-  )
+  );
 }
