@@ -1,0 +1,152 @@
+/*!
+ * Font Awesome Pro 6.0.0-alpha2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+.fa {
+  font-family: "Font Awesome 6 Pro";
+  font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+  font-weight: 900;
+  font-weight: var(--fa-style, 900); }
+
+.fa,
+.fas,
+.fa-solid,
+.far,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: inherit;
+  color: var(--fa-color, inherit); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+readers do not read off random characters that represent icons */
+
+.fa-bars::before {
+  content: "\f0c9"; }
+
+.fa-book::before {
+  content: "\f02d"; }
+
+.fa-calendar::before {
+  content: "\f133"; }
+
+.fa-caret-right::before {
+  content: "\f0da"; }
+
+.fa-question-circle::before {
+  content: "\f059"; }
+
+.fa-dice::before {
+  content: "\f522"; }
+
+.fa-expand::before {
+  content: "\f065"; }
+
+.fa-link::before {
+  content: "\f0c1"; }
+
+.fa-note-sticky::before {
+  content: "\f249"; }
+
+.fa-puzzle-piece::before {
+  content: "\f12e"; }
+
+.fa-right-to-bracket::before {
+  content: "\f2f6"; }
+
+.fa-share::before {
+  content: "\f064"; }
+
+.fa-star::before {
+  content: "\f005"; }
+
+.fa-thumbs-up::before {
+  content: "\f164"; }
+
+.fa-user::before {
+  content: "\f007"; }
+
+.fa-times::before {
+  content: "\f00d"; }
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../assets/fonts/fa/fa-brands-400.woff2") format("woff2"), url("../assets/fonts/fa/fa-brands-400.woff") format("woff"), url("../assets/fonts/fa/fa-brands-400.ttf") format("truetype"); }
+
+.fab {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa-discord:before {
+  content: "\f392"; }
+
+.fa-facebook-f:before {
+  content: "\f39e"; }
+
+.fa-twitter:before {
+  content: "\f099"; }
+
+.fa-youtube:before {
+  content: "\f167"; }
+@font-face {
+  font-family: 'Font Awesome 6 Duotone';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../assets/fonts/fa/fa-duotone-900.woff2") format("woff2"), url("../assets/fonts/fa/fa-duotone-900.woff") format("woff"), url("../assets/fonts/fa/fa-duotone-900.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Font Awesome 6 Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("../assets/fonts/fa/fa-light-300.woff2") format("woff2"), url("../assets/fonts/fa/fa-light-300.woff") format("woff"), url("../assets/fonts/fa/fa-light-300.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Font Awesome 6 Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../assets/fonts/fa/fa-regular-400.woff2") format("woff2"), url("../assets/fonts/fa/fa-regular-400.woff") format("woff"), url("../assets/fonts/fa/fa-regular-400.ttf") format("truetype"); }
+
+.far {
+  font-family: 'Font Awesome 6 Pro';
+  font-weight: 400; }
+@font-face {
+  font-family: 'Font Awesome 6 Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../assets/fonts/fa/fa-solid-900.woff2") format("woff2"), url("../assets/fonts/fa/fa-solid-900.woff") format("woff"), url("../assets/fonts/fa/fa-solid-900.ttf") format("truetype"); }
+
+.fas,
+.fa-solid {
+  font-family: 'Font Awesome 6 Pro';
+  font-weight: 900; }
+@font-face {
+  font-family: 'Font Awesome 6 Pro';
+  font-style: normal;
+  font-weight: 100;
+  font-display: block;
+  src: url("../assets/fonts/fa/fa-thin-100.woff2") format("woff2"), url("../assets/fonts/fa/fa-thin-100.woff") format("woff"), url("../assets/fonts/fa/fa-thin-100.ttf") format("truetype"); }
