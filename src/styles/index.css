@@ -309,10 +309,17 @@ body {
   border-bottom: solid 1px var(--gray-font-color-2);
 }
 
-.logo {
+.logo, .logo a {
+  display: flex;
   font-family: "JetBrains Mono", monospace;
   font-size: 1.4rem;
   opacity: 0.9;
+}
+
+.logo img{
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) saturate(100%) invert(65%) sepia(13%) saturate(6026%) hue-rotate(201deg) brightness(100%) contrast(105%);
 }
 
 .nav-link-content {
@@ -563,6 +570,7 @@ body {
   margin-top: 2rem;
   font-family: "JetBrains Mono", monospace;
   opacity: 0.6;
+  text-align: center;
 }
 
 .about-page hr{
@@ -691,8 +699,8 @@ body {
 .theme-switch {
   position: relative;
   display: inline-block;
-  width: 36px;
-  height: 18px;
+  width: 72px;
+  height: 30px;
 }
 
 .theme-switch input {
@@ -713,9 +721,9 @@ body {
 .slider::before {
   content: "";
   position: absolute;
-  height: 14px;
-  width: 14px;
-  left: 2px;
+  height: 26px;
+  width: 26px;
+  left: 4px;
   top: 2px;
   background-color: var(--white-font-color);
   border-radius: 50%;
@@ -727,7 +735,7 @@ body {
 }
 
 .theme-switch input:checked + .slider::before {
-  transform: translateX(18px);
+  transform: translateX(38px);
 }
 
 /*Scroll button*/
@@ -761,4 +769,117 @@ body {
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
+}
+
+/*math backdrop*/
+.math-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Grid */
+.math-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px
+    );
+  background-size: 48px 48px;
+  opacity: 0.25;
+}
+
+/* Symbols */
+.math-symbols span {
+  position: absolute;
+  font-size: 1.6rem;
+  color: var(--burple-font-color);
+  opacity: 0.12;
+  font-weight: 500;
+}
+
+/* Hand-placed, organic spacing */
+.math-symbols span:nth-child(1) {
+  top: 15%;
+  left: 10%;
+}
+
+.math-symbols span:nth-child(2) {
+  top: 30%;
+  right: 18%;
+}
+
+.math-symbols span:nth-child(3) {
+  bottom: 25%;
+  left: 20%;
+}
+
+.math-symbols span:nth-child(4) {
+  bottom: 18%;
+  right: 12%;
+}
+
+.math-symbols span:nth-child(5) {
+  top: 55%;
+  left: 55%;
+}
+
+.math-backdrop.pulse {
+  animation: backdrop-pulse 30s ease-in-out infinite;
+}
+
+@keyframes backdrop-pulse {
+  0%   { opacity: 0.85; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.85; }
+}
+
+/*dot backdrop*/
+.dot-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dot-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.06) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
+  opacity: 0.35;
+}
+
+/*diagonal backdrop*/
+.diagonal-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.diagonal-lines {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px,
+    transparent 24px
+  );
+  opacity: 0.3;
 }

@@ -1,4 +1,4 @@
-import SmallLst from "../components/misc/smallList"
+import SmallLst from "../components/misc/smallList";
 
 export default function HomePage() {
   return (

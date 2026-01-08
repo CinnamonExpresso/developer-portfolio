@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTheme } from "../hooks/useTheme";
 import ThemeToggle from "../misc/themetoggle";
+import PiImg from "../../assets/images/pi.svg"
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -25,7 +26,11 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <span className="logo">∂</span>
+        <span className="logo">
+          <a href="/">
+            <img src={PiImg}></img>
+          </a>
+        </span>
       </div>
 
       {/* Hamburger */}

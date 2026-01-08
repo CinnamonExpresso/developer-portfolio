@@ -8,12 +8,14 @@ import Navbar from "./components/main/navbar";
 import Footer from "./components/main/footer";
 import BlogPage from "./pages/blog/blogPage";
 import Post from "./pages/blog/post";
+import { DiagonalBackdrop } from "./components/deco/mathBackdrop";
 
 const App = () => {
   return (
     <div className={`default-page-outer-container`}>
       <Navbar />
       <div className="default-page-content-container">
+        <DiagonalBackdrop/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
