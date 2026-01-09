@@ -47,7 +47,7 @@ const BlogPost = ({post}:{post:any}) => {
   );
 };
 
-const TagLst = ({ tags, sorted, setFilteredPosts }: any) => {
+const TagLst = ({ tags, sorted, setFilteredPosts, setFetchingFiltered }: any) => {
   const [tagStates, setTagStates] = useState<boolean[]>(
     () => tags.map(() => false)
   );
@@ -56,24 +56,36 @@ const TagLst = ({ tags, sorted, setFilteredPosts }: any) => {
     setTagStates(prev =>
       prev.map((value, i) => (i === index ? !value : value))
     );
+    setFetchingFiltered(true);
   };
 
   useEffect(() => {
+    const timer = setInterval(() => {
     const activeTags = tags.filter((_:any, i:number) => tagStates[i]);
 
     if (activeTags.length === 0) {
       setFilteredPosts(sorted);
+      setFetchingFiltered(false);
       return;
     }
 
-    const filtered = sorted.filter((post:any) =>
-      activeTags.some((tag:string) =>
-        post.tags?.includes(tag.toLowerCase())
+    setFilteredPosts(
+      sorted.filter((post:any) =>
+        post.tags?.some((tag:string) =>
+          activeTags.some((active:any) =>
+            tag.toLowerCase().includes(active.toLowerCase())
+          )
+        )
       )
     );
+    setFetchingFiltered(false);
+  }, 1000);
 
-    setFilteredPosts(filtered);
-  }, [tagStates, tags, sorted, setFilteredPosts]);
+    return () => {
+      clearInterval(timer);
+    };
+  }, [tagStates, sorted, tags, setFilteredPosts]);
+
 
   return (
     <>
@@ -110,6 +122,8 @@ export default function BlogPage() {
   const [featured, ...rest] = sorted;
 
   const [filteredPosts, setFilteredPosts] = useState(sorted);
+  const [fetchingFiltered, setFetchingFiltered] = useState(false);
+
   const tagLst = ["Linear Algebra", "Calculus", "Analysis", "Learning & Pedagogy", "Writing", "Physics"]
 
   return (
@@ -135,7 +149,7 @@ export default function BlogPage() {
       <section className="blog-topics">
         <h2>Topics</h2>
         <div className="topic-list">
-         <TagLst tags={tagLst} sorted={sorted} setFilteredPosts={setFilteredPosts}/>
+         <TagLst tags={tagLst} sorted={sorted} setFilteredPosts={setFilteredPosts} setFetchingFiltered={setFetchingFiltered}/>
         </div>
       </section>
       {featured && (
@@ -151,7 +165,7 @@ export default function BlogPage() {
         </section>
       )}
       <section className="blog-list">
-        {filteredPosts.map(((post: PostType, i:number) => <BlogPost key={i} post={post} />))}
+        {fetchingFiltered ? <p>Loading...</p> : filteredPosts.map(((post: PostType, i:number) => <BlogPost key={i} post={post} />))}
       </section>
     </div>
   );
