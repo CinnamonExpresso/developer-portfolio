@@ -783,6 +783,7 @@ body {
   border: none;
   background: none;
   cursor: pointer;
+  color: var(--white-font-color);
 }
 .tag-list button i, .topic-list button i{
   color: var(--gray-font-color-2);

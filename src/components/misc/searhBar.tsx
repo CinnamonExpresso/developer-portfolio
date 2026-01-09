@@ -12,6 +12,8 @@ interface BlogPost {
 interface SearchBarProps {
   posts: BlogPost[]
   onResults: (results: BlogPost[]) => void
+  setFetchingFiltered: any
+  setHasQuery: any
   placeholder?: string
   tag?: string
 }
@@ -19,11 +21,14 @@ interface SearchBarProps {
 export const SearchBar: React.FC<SearchBarProps> = ({
   posts,
   onResults,
-  placeholder = "Search posts..."
+  placeholder = "Search posts...",
+  setFetchingFiltered,
+  setHasQuery
 }) => {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
+    setFetchingFiltered(true);
     const timeout = setTimeout(() => {
       const lower = query.toLowerCase()
 
@@ -33,9 +38,11 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         post.date.includes(lower) ||
         post.tags?.some(tag => tag.toLowerCase().includes(lower))
       )
+      setFetchingFiltered(false);
+      onResults(filtered);
+    }, 1000)
 
-      onResults(filtered)
-    }, 200)
+    setHasQuery(Boolean(query));
 
     return () => clearTimeout(timeout)
 

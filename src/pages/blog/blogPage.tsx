@@ -47,7 +47,7 @@ const BlogPost = ({post}:{post:any}) => {
   );
 };
 
-const TagLst = ({ tags, sorted, setFilteredPosts, setFetchingFiltered }: any) => {
+const TagLst = ({ tags, sorted, setFilteredPosts, setFetchingFiltered, hasQuery, setHasFilteredTag }: any) => {
   const [tagStates, setTagStates] = useState<boolean[]>(
     () => tags.map(() => false)
   );
@@ -57,35 +57,37 @@ const TagLst = ({ tags, sorted, setFilteredPosts, setFetchingFiltered }: any) =>
       prev.map((value, i) => (i === index ? !value : value))
     );
     setFetchingFiltered(true);
+    setHasFilteredTag(!tagStates.some(Boolean));
   };
 
   useEffect(() => {
-    const timer = setInterval(() => {
-    const activeTags = tags.filter((_:any, i:number) => tagStates[i]);
+    if(!hasQuery){
+      const timer = setInterval(() => {
+      const activeTags = tags.filter((_:any, i:number) => tagStates[i]);
 
-    if (activeTags.length === 0) {
-      setFilteredPosts(sorted);
-      setFetchingFiltered(false);
-      return;
-    }
+      if (activeTags.length === 0) {
+        setFilteredPosts(sorted);
+        setFetchingFiltered(false);
+        return;
+      }
 
-    setFilteredPosts(
-      sorted.filter((post:any) =>
-        post.tags?.some((tag:string) =>
-          activeTags.some((active:any) =>
-            tag.toLowerCase().includes(active.toLowerCase())
+      setFilteredPosts(
+        sorted.filter((post:any) =>
+          post.tags?.some((tag:string) =>
+            activeTags.some((active:any) =>
+              tag.toLowerCase().includes(active.toLowerCase())
+            )
           )
         )
-      )
-    );
-    setFetchingFiltered(false);
-  }, 1000);
+      );
+      setFetchingFiltered(false);
+    }, 1000);
 
-    return () => {
-      clearInterval(timer);
-    };
-  }, [tagStates, sorted, tags, setFilteredPosts]);
-
+      return () => {
+        clearInterval(timer);
+      };
+    }
+  }, [tagStates]);
 
   return (
     <>
@@ -122,9 +124,11 @@ export default function BlogPage() {
   const [featured, ...rest] = sorted;
 
   const [filteredPosts, setFilteredPosts] = useState(sorted);
-  const [fetchingFiltered, setFetchingFiltered] = useState(false);
+  const [fetchingFiltered, setFetchingFiltered] = useState(false); // Flag for checking if posts are being filtered
+  const [hasQuery, setHasQuery] = useState(false); // Flag for checking if user has searched or is in the process of searching
+  const [hasFilteredTag, setHasFilteredTag] = useState(false); // Flag for checking if user has clicked on a filtered tag
 
-  const tagLst = ["Linear Algebra", "Calculus", "Analysis", "Learning & Pedagogy", "Writing", "Physics"]
+  const tagLst = ["Linear Algebra", "Calculus", "Analysis", "Learning & Pedagogy", "Writing", "Physics"];
 
   return (
     <div className="page blog">
@@ -144,15 +148,23 @@ export default function BlogPage() {
           posts={sorted}
           onResults={setFilteredPosts}
           placeholder="search posts..."
+          setFetchingFiltered={setFetchingFiltered}
+          setHasQuery={setHasQuery}
         />
       </section>
       <section className="blog-topics">
-        <h2>Topics</h2>
+        {!hasQuery &&
+        (
+          <>
+          <h2>Topics</h2>
         <div className="topic-list">
-         <TagLst tags={tagLst} sorted={sorted} setFilteredPosts={setFilteredPosts} setFetchingFiltered={setFetchingFiltered}/>
+         <TagLst tags={tagLst} sorted={sorted} setFilteredPosts={setFilteredPosts} setFetchingFiltered={setFetchingFiltered} hasQuery={hasQuery} setHasFilteredTag={setHasFilteredTag}/>
         </div>
+        </>
+        )
+        }
       </section>
-      {featured && (
+      {(featured && !hasQuery && !hasFilteredTag) && (
         <section className="blog-featured">
           <DotBackdrop />
 
