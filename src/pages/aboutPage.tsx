@@ -23,7 +23,6 @@ export default function AboutPage() {
           enjoy writing, building projects, reading (especially on philosophy),
           and researching.
         </p>
-        <p className="about-symbol">∀ problems, ∃ elegant solutions.</p>
         <hr></hr>
         <div className="small-lst-container">
           <SmallLst title={"Technical Skills"} lst={["Full-Stack Web Development (3 years)", "Software engineering (3 years)", "University-level mathematics", "Mathematical Programming", "Scientific Writing (Latex & Json)", "Git & Github (3 years)"]}/>

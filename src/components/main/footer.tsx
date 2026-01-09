@@ -22,7 +22,7 @@ export default function Footer() {
           GitHub
         </a>
         <a
-          href="https://www.youtube.com/@pumped212"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >

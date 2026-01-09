@@ -91,6 +91,11 @@ body,
   scrollbar-color: var(--burple-font-color) var(--midnight-black);
 }
 
+a{
+  text-decoration: none;
+  color: var(--burple-font-color);
+}
+
 body {
   font-family: "Inter", system-ui, sans-serif;
   background: var(--midnight-black);
@@ -607,32 +612,123 @@ body {
   color: var(--burple-font-color);
 }
 
+/*=========START OF BLOG===========*/
+.blog-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-intro {
+  max-width: 720px;
+  margin: 3rem auto;
+  color: var(--gray-font-color-2);
+  text-align: center;
+}
+
+.blog-featured {
+  position: relative;
+  margin: 4rem 0;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--soft-border);
+  background: var(--midnight-black);
+  overflow: hidden;
+}
+
+.featured-post {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+}
+
+.featured-label {
+  color: var(--burple-font-color);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.blog-topics {
+  margin: 4rem 0 2rem;
+}
+
+.topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.topic-list span {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--soft-border);
+  font-size: 0.85rem;
+  color: var(--gray-font-color-2);
+}
+
 .blog-list {
-  margin-top: 3rem;
   display: grid;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
 .blog-item {
+  display: block;
+  padding: 1.4rem;
+  border-radius: 10px;
+  border: 1px solid var(--soft-border);
+  background: var(--midnight-black);
   text-decoration: none;
-  color: var(--white-font-color);
+  color: inherit;
 }
 
-.blog-item h2 {
-  font-size: 1.3rem;
-  margin-bottom: 0.4rem;
+.blog-item-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .blog-description {
   color: var(--gray-font-color-2);
-  max-width: 600px;
+  margin: 0.6rem 0 1rem;
 }
 
-.blog-date {
-  font-size: 0.8rem;
-  opacity: 0.5;
-  font-family: "JetBrains Mono", monospace;
+.read-more {
+  color: var(--burple-font-color);
+  font-size: 0.9rem;
 }
+
+.blog-meta {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--gray-font-color-2);
+}
+
+.tag-list {
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+.tag-list span {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--soft-border);
+  color: var(--gray-font-color-2);
+}
+
+/*=========END OF BLOG===========*/
 
 /* Post */
 

@@ -39,12 +39,6 @@ export default function ContactPage() {
           subtitle="github.com/CinnamonExpresso"
           is_custom={false}
         />
-        <ContactItem
-          title="YouTube"
-          link="https://www.youtube.com/@pumped212"
-          subtitle="Coming Soon"
-          is_custom={true}
-        />
       </section>
     </div>
   );

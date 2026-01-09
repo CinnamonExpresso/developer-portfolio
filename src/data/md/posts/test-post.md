@@ -1,8 +1,8 @@
 ---
-title: "test post"
+title: "Test post"
 date: "2025-01-01"
-description: "test post desc"
-tags: ["math", "proofs", "writing"]
+description: "a test post"
+tags: ["test"]
 ---
 
-this is a test post
+A test post

@@ -6,7 +6,7 @@ import PiImg from "../../assets/images/pi.svg"
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [subMenuOpen, setSubMenuOpen]: any = useState({}); // track mobile submenu
+  const [subMenuOpen, setSubMenuOpen]: any = useState({}); // tracking for mobile submenu
 
   const links = [
     { name: "Home", href: "/" },
@@ -32,8 +32,7 @@ export default function Navbar() {
           </a>
         </span>
       </div>
-
-      {/* Hamburger */}
+      {/* Hamburger menu */}
       <button
         className="hamburger"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -43,7 +42,6 @@ export default function Navbar() {
         <span className={`bar ${menuOpen ? "open" : ""}`}></span>
         <span className={`bar ${menuOpen ? "open" : ""}`}></span>
       </button>
-
       {/* Links */}
       <div className={`nav-link-content ${menuOpen ? "active" : ""}`}>
         {links.map((link: any) => (
