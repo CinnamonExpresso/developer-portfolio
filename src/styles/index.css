@@ -13,6 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   --burple-font-color: #8b9cff;
+  --burple-dark-font-color: #6366f1;
   --white-font-color: #eaeaf0;
   --gray-font-color-2: #a0a0b5;
   --midnight-black: #0f0f12;
@@ -528,6 +529,10 @@ body {
   color: var(--gray-font-color-2);
 }
 
+.page-searchbar .search-container{
+  margin: 20px auto;
+}
+
 /* Projects */
 
 .projects-list {
@@ -769,6 +774,19 @@ body {
   border-radius: 999px;
   border: 1px solid var(--soft-border);
   color: var(--gray-font-color-2);
+}
+
+.tag-list button, .topic-list button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.tag-list button i, .topic-list button i{
+  color: var(--gray-font-color-2);
+  font-size: 12px;
 }
 
 /*=========END OF BLOG===========*/
@@ -1021,4 +1039,43 @@ body {
     transparent 24px
   );
   opacity: 0.3;
+}
+
+/*search bar*/
+.search-container {
+  position: relative;
+  max-width: 420px;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  border: 1px solid var(--white-font-color);
+  background: var(--midnight-black);
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  color: var(--white-font-color);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--burple-dark-font-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.search-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-font-color-2);
+  pointer-events: none;
+  font-size: 0.9rem;
+}
+
+.search-icon i{
+  cursor: pointer;
 }

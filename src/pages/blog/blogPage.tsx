@@ -1,6 +1,8 @@
 import matter from "gray-matter";
 import { MathBackdrop, DotBackdrop } from "../../components/deco/mathBackdrop";
 import { getReadingTime } from "../../components/blog/getReadingTime";
+import { SearchBar } from "../../components/misc/searhBar";
+import { useState, useEffect } from "react";
 
 const posts = import.meta.glob("../../data/md/posts/*.md", {
   as: "raw",
@@ -19,6 +21,80 @@ interface PostType extends Frontmatter {
   readingTime?: string | number;
 }
 
+const BlogPost = ({post}:{post:any}) => {
+  return (
+    <a key={post.slug} href={`/blog/${post.slug}`} className="blog-item">
+      <div className="blog-item-header">
+        <h3>{post.title}</h3>
+        <span className="blog-date">{post.date}</span>
+      </div>
+      <div className="blog-meta">
+        <span>{post.date}</span>
+        <span>·</span>
+        <span>{post.readingTime}</span>
+      </div>
+
+      <div className="tag-list">
+        {post.tags?.map((tag: string) => (
+          <span key={tag}>{tag}</span>
+        ))}
+      </div>
+
+      <p className="blog-description">{post.description}</p>
+
+      <span className="read-more">Read →</span>
+    </a>
+  );
+};
+
+const TagLst = ({ tags, sorted, setFilteredPosts }: any) => {
+  const [tagStates, setTagStates] = useState<boolean[]>(
+    () => tags.map(() => false)
+  );
+
+  const toggleTag = (index: number) => {
+    setTagStates(prev =>
+      prev.map((value, i) => (i === index ? !value : value))
+    );
+  };
+
+  useEffect(() => {
+    const activeTags = tags.filter((_:any, i:number) => tagStates[i]);
+
+    if (activeTags.length === 0) {
+      setFilteredPosts(sorted);
+      return;
+    }
+
+    const filtered = sorted.filter((post:any) =>
+      activeTags.some((tag:string) =>
+        post.tags?.includes(tag.toLowerCase())
+      )
+    );
+
+    setFilteredPosts(filtered);
+  }, [tagStates, tags, sorted, setFilteredPosts]);
+
+  return (
+    <>
+      {tags.map((tag:string, i:number) => {
+        const anyActive = tagStates.some(Boolean);
+
+        if (anyActive && !tagStates[i]) return null;
+
+        return (
+          <span key={tag}>
+            <button onClick={() => toggleTag(i)}>
+              {tag}
+              {(anyActive && tagStates[i]) && <i className="far fa-x"></i>}
+            </button>
+          </span>
+        );
+      })}
+    </>
+  );
+};
+
 export default function BlogPage() {
   const articles: PostType[] = Object.entries(posts).map(([path, content]) => {
     const file = matter(content as string);
@@ -33,6 +109,9 @@ export default function BlogPage() {
 
   const [featured, ...rest] = sorted;
 
+  const [filteredPosts, setFilteredPosts] = useState(sorted);
+  const tagLst = ["Linear Algebra", "Calculus", "Analysis", "Learning & Pedagogy", "Writing", "Physics"]
+
   return (
     <div className="page blog">
       <header className="page-header blog-header">
@@ -41,20 +120,22 @@ export default function BlogPage() {
         <div className="page-header-content">
           <h1>Blog</h1>
           <p className="page-subtitle">
-            Notes on mathematics, various science related subjects, and philosophy. My work here is mostly
-            short and occasionally longer.
+            Notes on mathematics, various science related subjects, and
+            philosophy. My work here is mostly short and occasionally longer.
           </p>
         </div>
       </header>
+      <section className="page-searchbar">
+        <SearchBar
+          posts={sorted}
+          onResults={setFilteredPosts}
+          placeholder="search posts..."
+        />
+      </section>
       <section className="blog-topics">
         <h2>Topics</h2>
         <div className="topic-list">
-          <span>Linear Algebra</span>
-          <span>Calculus</span>
-          <span>Analysis</span>
-          <span>Learning & Pedagogy</span>
-          <span>Writing</span>
-          <span>Physics</span>
+         <TagLst tags={tagLst} sorted={sorted} setFilteredPosts={setFilteredPosts}/>
         </div>
       </section>
       {featured && (
@@ -70,29 +151,7 @@ export default function BlogPage() {
         </section>
       )}
       <section className="blog-list">
-        {rest.map((post: PostType) => (
-          <a key={post.slug} href={`/blog/${post.slug}`} className="blog-item">
-            <div className="blog-item-header">
-              <h3>{post.title}</h3>
-              <span className="blog-date">{post.date}</span>
-            </div>
-            <div className="blog-meta">
-              <span>{post.date}</span>
-              <span>·</span>
-              <span>{post.readingTime}</span>
-            </div>
-
-            <div className="tag-list">
-              {post.tags?.map((tag) => (
-                <span key={tag}>{tag}</span>
-              ))}
-            </div>
-
-            <p className="blog-description">{post.description}</p>
-
-            <span className="read-more">Read →</span>
-          </a>
-        ))}
+        {filteredPosts.map(((post: PostType, i:number) => <BlogPost key={i} post={post} />))}
       </section>
     </div>
   );
