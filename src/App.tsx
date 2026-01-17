@@ -6,6 +6,7 @@ import ContactPage from "./pages/contactPage";
 import ScrollButton from "./components/misc/scrollBtn";
 import Navbar from "./components/main/navbar";
 import Footer from "./components/main/footer";
+import BasicArticles from "../src/components/main/basicArticles"
 import BlogPage from "./pages/blog/blogPage";
 import Post from "./pages/blog/post";
 import { DiagonalBackdrop } from "./components/deco/mathBackdrop";
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:post" element={<Post />} />
+          <Route path="/ai-policy" element={<BasicArticles title="ai-policy"/>} />
         </Routes>
         <ScrollButton />
       </div>

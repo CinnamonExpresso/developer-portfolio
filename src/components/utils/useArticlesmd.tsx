@@ -2,7 +2,7 @@
 import fm from "front-matter";
 
 const mdFiles = import.meta.glob(
-  '/src/data/md/posts/*.{md,mdx}',
+  '/src/data/md/{posts,misc}/*.{md,mdx}',
   { as: 'raw' }
 );
 
