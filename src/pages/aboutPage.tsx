@@ -41,6 +41,7 @@ export default function AboutPage() {
             "Dean’s List (2 semesters)",
             "President’s List (2 semesters)",
             "Honors College (Admitted 05/05/2025)",
+            "Math Club (Admitted Fall 2025)",
           ]}
         />
       </div>
@@ -73,7 +74,8 @@ export default function AboutPage() {
           lst={[
             "Professional writing",
             "Microsoft Office",
-            "Canva"
+            "Canva",
+            "Linux"
           ]}
         />
         <SmallLst
