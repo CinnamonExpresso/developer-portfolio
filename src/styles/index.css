@@ -12,8 +12,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --burple-font-color: #8b9cff;
-  --burple-dark-font-color: #6366f1;
+  --purple-font-color: #7850e9;
+  --second-purple-font-color: #6665d2;
+  --burple-font-color: #7289da;
+  --burple-dark-font-color: #6665d2;
   --white-font-color: #eaeaf0;
   --gray-font-color-2: #a0a0b5;
   --midnight-black: #0f0f12;
@@ -79,7 +81,7 @@ body,
   --midnight-black: #fafafa !important;
   --white-font-color: #1a1a1a !important;
   --gray-font-color-2: #555 !important;
-  --burple-font-color: #5a6bff !important;
+  --purple-font-color: #5a6bff !important;
   background-color: #fafafa !important;
   --soft-border: #1a1a1a !important;
   color: #1a1a1a !important;
@@ -89,12 +91,12 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scrollbar-color: var(--burple-font-color) var(--midnight-black);
+  scrollbar-color: var(--purple-font-color) var(--midnight-black);
 }
 
 a{
   text-decoration: none;
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
 }
 
 body {
@@ -118,7 +120,7 @@ body {
 }
 
 .accent {
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
 }
 
 .subtitle {
@@ -156,7 +158,7 @@ body {
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--burple-font-color);
+  background: var(--purple-font-color);
   transition: width 0.3s ease;
 }
 
@@ -216,7 +218,7 @@ body {
   content: "•";
   position: absolute;
   left: 0;
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
 }
 
 /*Home blog posts*/
@@ -235,7 +237,7 @@ body {
   color: var(--white-font-color);
   display: block;
   padding-left: 1rem;
-  border-left: 2px solid var(--burple-font-color);
+  border-left: 2px solid var(--purple-font-color);
 }
 
 .recent-post p {
@@ -245,7 +247,7 @@ body {
 
 .recent-post span {
   font-size: 0.85rem;
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
 }
 
 /* Featured cards */
@@ -276,7 +278,7 @@ body {
 .featured-card a {
   text-decoration: none;
   font-size: 0.9rem;
-  color: var(--burple-font-color);
+  color: var(--burple-dark-font-color);
 }
 
 .featured-card a:hover {
@@ -343,7 +345,7 @@ body {
 
 .nav-link-content a:hover {
   opacity: 1;
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
 }
 
 /* Hamburger Button */
@@ -447,7 +449,7 @@ body {
 
 .sub-menu a:hover {
   background-color: rgba(255, 255, 255, 0.05);
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
 }
 
 /* Mobile: sub-menu slides down */
@@ -508,7 +510,7 @@ body {
 
 .footer-center a:hover,
 .footer-right a:hover {
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
 }
 
 /* Shared page layout */
@@ -562,7 +564,7 @@ body {
   margin-top: 1rem;
   font-size: 0.8rem;
   font-family: "JetBrains Mono", monospace;
-  color: var(--burple-font-color);
+  color: var(--second-purple-font-color);
 }
 
 /* About */
@@ -657,7 +659,7 @@ body {
 }
 
 .contact-item a:hover {
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
 }
 
 /*=========START OF BLOG===========*/
@@ -698,7 +700,7 @@ body {
 }
 
 .featured-label {
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
   font-size: 0.8rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -751,7 +753,7 @@ body {
 }
 
 .read-more {
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
   font-size: 0.9rem;
 }
 
@@ -889,7 +891,7 @@ body {
 }
 
 .theme-switch input:checked + .slider {
-  background-color: var(--burple-font-color);
+  background-color: var(--purple-font-color);
 }
 
 .theme-switch input:checked + .slider::before {
@@ -902,7 +904,7 @@ body {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  background-color: var(--burple-font-color);
+  background-color: var(--purple-font-color);
   border-radius: 50%;
   z-index: 50;
   margin: auto;
@@ -961,7 +963,7 @@ body {
 .math-symbols span {
   position: absolute;
   font-size: 1.6rem;
-  color: var(--burple-font-color);
+  color: var(--purple-font-color);
   opacity: 0.12;
   font-weight: 500;
 }
