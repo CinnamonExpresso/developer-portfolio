@@ -10,21 +10,18 @@ export default function HomePage() {
             Hi, I’m <span className="accent">Felix</span>.
           </h1>
           <p className="subtitle">
-            Math major interested in physics, scientific writing,
-            and solutions to complex problems.
+            Physics & Electrical Engineering student interested in finding solutions to complex problems.
           </p>
         </header>
         {/* Intro */}
         <section className="content home-intro">
           <p>
-            I study applied mathematics. My academic interests
-            currently center on linear algebra, proofs, and
-            multivariable calculus, especially where they intersect
-            with physical systems.
+            I study Physics and Electrical Engineering. My academic interests
+            currently center on multivariable calculus and the general applications of engineering. Specifically in regards to electricity or robotics.
           </p>
         </section>
         {/* Focus areas */}
-        <SmallLst title={"Current Focus"} lst={["Applied Linear Algebra", "Multivariable & Vector Calculus", "Mathematics for Physical Systems", "Technical & Scientific Writing"]}/>
+        <SmallLst title={"Current Focus"} lst={["Multivariable & Vector Calculus", "Electrical Engineering", "Technical & Scientific Writing"]}/>
         {/* Featured links */}
         <section className="home-featured">
           <div className="featured-card">
@@ -37,7 +34,7 @@ export default function HomePage() {
           <div className="featured-card">
             <h3>Blog</h3>
             <p>
-              Short notes on mathematics, problem-solving, philosophy, and
+              Short notes on mathematics, engineering, problem-solving, philosophy, and
               various ideas.
             </p>
             <a href="/blog">Read posts →</a>

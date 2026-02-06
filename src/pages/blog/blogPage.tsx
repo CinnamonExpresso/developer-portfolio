@@ -128,7 +128,7 @@ export default function BlogPage() {
   const [hasQuery, setHasQuery] = useState(false); // Flag for checking if user has searched or is in the process of searching
   const [hasFilteredTag, setHasFilteredTag] = useState(false); // Flag for checking if user has clicked on a filtered tag
 
-  const tagLst = ["Linear Algebra", "Calculus", "Analysis", "Learning & Pedagogy", "Writing", "Physics"];
+  const tagLst = ["Linear Algebra", "Calculus", "Writing", "Physics"];
 
   return (
     <div className="page blog">
@@ -138,8 +138,8 @@ export default function BlogPage() {
         <div className="page-header-content">
           <h1>Blog</h1>
           <p className="page-subtitle">
-            Notes on mathematics, various science related subjects, and
-            philosophy. My work here is mostly short and occasionally longer.
+            Notes on mathematics, engineering, various science related subjects, and
+            philosophy. My work here is mostly short.
           </p>
         </div>
       </header>
