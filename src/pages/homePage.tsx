@@ -16,12 +16,12 @@ export default function HomePage() {
         {/* Intro */}
         <section className="content home-intro">
           <p>
-            I study Physics and Electrical Engineering. My academic interests
-            currently center on multivariable calculus and the general applications of engineering. Specifically in regards to electricity or robotics.
+            I study Physics and Engineering. My academic interests
+            currently center on calculus and the general applications of engineering. Specifically in regards to electricity or robotics.
           </p>
         </section>
         {/* Focus areas */}
-        <SmallLst title={"Current Focus"} lst={["Multivariable & Vector Calculus", "Electrical Engineering", "Technical & Scientific Writing"]}/>
+        <SmallLst title={"Current Focus"} lst={["Multivariable & Vector Calculus", "Engineering", "Electrical Engineering", "Mechatronics", "Technical & Scientific Writing"]}/>
         {/* Featured links */}
         <section className="home-featured">
           <div className="featured-card">
