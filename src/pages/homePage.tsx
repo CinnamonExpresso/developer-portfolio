@@ -10,7 +10,7 @@ export default function HomePage() {
             Hi, I’m <span className="accent">Felix</span>.
           </h1>
           <p className="subtitle">
-            Physics & Electrical Engineering student interested in finding solutions to complex problems.
+            Physics & Engineering student interested in finding solutions to complex problems.
           </p>
         </header>
         {/* Intro */}
