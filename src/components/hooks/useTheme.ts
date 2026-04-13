@@ -1,22 +1,24 @@
 import { useEffect, useState } from "react";
 
-export function useTheme() {
+export function useTheme(theme_choice:string="", is_return:boolean=true) {
   const getInitialTheme = () => {
     const stored = localStorage.getItem("theme");
     if (stored) return stored;
 
     // system preference
     return window.matchMedia("(prefers-color-scheme: light)").matches
-      ? "light"
-      : "dark";
+      ? "vanillia"
+      : "midnight";
   };
 
-  const [theme, setTheme] = useState(getInitialTheme);
+  const [theme, setTheme] = useState(theme_choice ? theme_choice  : getInitialTheme);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  return { theme, setTheme };
+  if(is_return){
+    return { theme, setTheme };
+  }
 }

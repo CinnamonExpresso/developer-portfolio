@@ -1,10 +1,7 @@
 import { useState } from "react";
-import { useTheme } from "../hooks/useTheme";
-import ThemeToggle from "../misc/themetoggle";
 import PiImg from "../../assets/images/pi.svg"
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
   const [subMenuOpen, setSubMenuOpen]: any = useState({}); // tracking for mobile submenu
 
@@ -75,10 +72,6 @@ export default function Navbar() {
             )}
           </div>
         ))}
-      </div>
-
-      <div className="toggle-container">
-        <ThemeToggle theme={theme} setTheme={setTheme} />
       </div>
     </nav>
   );

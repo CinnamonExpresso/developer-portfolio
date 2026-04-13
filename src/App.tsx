@@ -11,6 +11,7 @@ import BlogPage from "./pages/blog/blogPage";
 import PublishedWorkPage from "./pages/publishedWorkPage";
 import Post from "./pages/blog/post";
 import { DiagonalBackdrop } from "./components/deco/mathBackdrop";
+import SettingsButton from "./components/misc/settingsBtn";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/ai-policy" element={<BasicArticles title="ai-policy"/>} />
         </Routes>
         <ScrollButton />
+        <SettingsButton/>
       </div>
       <Footer />
     </div>

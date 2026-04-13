@@ -76,15 +76,58 @@ body,
     border-color 0.3s ease;
 }
 
-/*Light Mode*/
-[data-theme="light"] {
+/*Themes*/
+[data-theme="white"] {
   --midnight-black: #fafafa !important;
   --white-font-color: #1a1a1a !important;
   --gray-font-color-2: #555 !important;
-  --purple-font-color: #5a6bff !important;
+  --burple-font-color: #5a6bff !important;
   background-color: #fafafa !important;
   --soft-border: #1a1a1a !important;
+  --scroll-bar-black: #e6e6e6  !important;
   color: #1a1a1a !important;
+}
+
+[data-theme="pink"] {
+  --midnight-black: #fff5f8 !important;
+  --white-font-color: #2d1b2c !important;
+  --gray-font-color-2: #8a6b7c !important;
+  --burple-font-color: #d973b0 !important;
+  --burple-dark-font-color: #c55a9a !important;
+  --purple-font-color: #e88bc7 !important;
+  --second-purple-font-color: #d46aa8 !important;
+  --soft-border: #f0cfdf !important;
+  --scroll-bar-black: #f7dfea !important;
+  background-color: #fff5f8 !important;
+  color: #2d1b2c !important;
+}
+
+[data-theme="mint"] {
+  --midnight-black: #f0faf7 !important;
+  --white-font-color: #1a2e2a !important;
+  --gray-font-color-2: #5f8b7f !important;
+  --burple-font-color: #3fa38f !important;
+  --burple-dark-font-color: #2e8b7a !important;
+  --purple-font-color: #5fb3a0 !important;
+  --second-purple-font-color: #4a9e8a !important;
+  --soft-border: #c8e3db !important;
+  --scroll-bar-black: #ddf0ea !important;
+  background-color: #f0faf7 !important;
+  color: #1a2e2a !important;
+}
+
+[data-theme="vanillia"] {
+  --midnight-black: #fffaf0 !important;
+  --white-font-color: #2e241f !important;
+  --gray-font-color-2: #a8865e !important;
+  --burple-font-color: #d99e4a !important;
+  --burple-dark-font-color: #c28635 !important;
+  --purple-font-color: #e8b15a !important;
+  --second-purple-font-color: #d69638 !important;
+  --soft-border: #f5e2c1 !important;
+  --scroll-bar-black: #f8efdb !important;
+  background-color: #fffaf0 !important;
+  color: #2e241f !important;
 }
 
 * {
@@ -923,7 +966,7 @@ body {
 .scroll-btn {
   display: flex;
   position: fixed;
-  bottom: 10px;
+  bottom: 80px;
   right: 10px;
   background-color: var(--purple-font-color);
   border-radius: 50%;
@@ -934,6 +977,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .scroll-btn i {
   font-size: 32px;
   margin: auto;
@@ -943,6 +987,63 @@ body {
 }
 .scroll-btn:hover {
   scale: 0.94;
+}
+/*Settings button*/
+.settings-btn{
+  bottom: 10px;
+}
+.settings-btn-container{
+  position: relative;
+}
+.settings-gui{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  padding: 0px 10px;
+  height: 200px;
+  width: 240px;
+  border: 1px solid var(--white-font-color);
+  border-radius: 6px;
+  background: var(--midnight-black);
+}
+.settings-gui h2{
+  font-size: 20px;
+  display: flex;
+}
+
+.settings-gui h1{
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.settings-item{
+  display: flex;
+  gap: 10px;
+}
+.settings-item h2 i{
+  margin-right: 10px;
+}
+/*selection box*/
+.settings-item select {
+appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  background: var(--scroll-bar-black);
+  color: var(--white-font-color);
+  border-radius: 0.25em;
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+}
+.settings-item select:focus {
+  outline: none;
+}
+.settings-item option{
+  color: var(--white-font-color);
+  background-color: var(--pdf-surface);
 }
 
 /*small lst*/
