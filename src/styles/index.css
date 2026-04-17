@@ -19,6 +19,7 @@
   --white-font-color: #eaeaf0;
   --gray-font-color-2: #a0a0b5;
   --midnight-black: #0f0f12;
+  --white: #ffffff;
 
   --soft-border: rgba(255, 255, 255, 0.08);
 }
@@ -77,6 +78,9 @@ body,
 }
 
 /*Themes*/
+[data-theme="midnight"] {
+  --white: var(--midnight-black);
+}
 [data-theme="white"] {
   --midnight-black: #fafafa !important;
   --white-font-color: #1a1a1a !important;
@@ -168,7 +172,7 @@ body {
 
 .subtitle {
   margin-top: 0.5rem;
-  color: #a0a0b5;
+  color: var(--gray-font-color-2);
 }
 
 .equation {
@@ -303,9 +307,11 @@ body {
 
 .featured-card {
   padding: 1.5rem;
-  border: 1px solid var(--white-font-color);
+  border: 1px solid var(--soft-border);
   border-radius: 6px;
-  background: var(--midnight-black);
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
 }
 
 .featured-card h3 {
@@ -319,6 +325,7 @@ body {
 }
 
 .featured-card a {
+  margin-top: auto;
   text-decoration: none;
   font-size: 0.9rem;
   color: var(--burple-dark-font-color);
@@ -596,6 +603,7 @@ body {
 .project-card h2 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: var(--burple-dark-font-color)
 }
 
 .project-card p {

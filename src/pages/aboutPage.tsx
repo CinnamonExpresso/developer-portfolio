@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="about-intro">
           <p>
             I study Mathematics with a minor in Philosophy. I’m especially drawn to calculus
-            and the general applications of both physics and engineering.
+            and the general applications of mathmematics in physics.
           </p>
 
           <p>
@@ -97,7 +97,7 @@ export default function AboutPage() {
             />
           </div>
           <div className="about-symbol">
-            {randomQuote}
+            <p>{randomQuote}</p>
           </div>
         </section>
       </section>
