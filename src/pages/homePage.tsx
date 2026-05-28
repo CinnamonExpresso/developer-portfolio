@@ -9,9 +9,6 @@ export default function HomePage() {
           <h1>
             Hi, I’m <span className="accent">Felix</span>.
           </h1>
-          <p className="subtitle">
-            Mathematics student interested in finding solutions to complex problems.
-          </p>
         </header>
         {/* Intro */}
         <section className="content home-intro">

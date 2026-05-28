@@ -7,7 +7,7 @@ export function useTheme(theme_choice:string="", is_return:boolean=true) {
 
     // system preference
     return window.matchMedia("(prefers-color-scheme: light)").matches
-      ? "vanillia"
+      ? "mint"
       : "midnight";
   };
 

@@ -13,9 +13,6 @@ export default function AboutPage() {
     <div className="page about-page">
       <header className="about-header">
         <h1>About</h1>
-        <p className="page-subtitle">
-          Mathematics as a way of thinking, not just a field of study.
-        </p>
       </header>
 
       <section className="about-content">

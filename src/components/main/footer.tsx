@@ -11,7 +11,6 @@ export default function Footer() {
         <a href="/blog">Blog</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
-        <a href="/ai-policy">Ai Policy</a>
       </div>
 
       <div className="footer-right">
