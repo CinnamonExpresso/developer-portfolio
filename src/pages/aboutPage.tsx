@@ -18,7 +18,7 @@ export default function AboutPage() {
       <section className="about-content">
         <div className="about-intro">
           <p>
-            I study Mathematics with a minor in Philosophy. I’m especially drawn to calculus
+            I study Mathematics and Philsopsophy with a minor in Physics. I’m especially drawn to calculus
             and the general applications of mathmematics in physics.
           </p>
 
@@ -36,7 +36,8 @@ export default function AboutPage() {
             <SmallLst
               title="Education"
               lst={[
-                "B.S. in Mathematics, minor in Philosophy (Honors) 2024 – 2027"
+                "Bachleor of Science in Mathematics, minor in Physics (Honors) 2024 – 2027",
+                "Bachelor of Arts in Philosophy 2024 – 2027"
               ]}
             />
             <SmallLst

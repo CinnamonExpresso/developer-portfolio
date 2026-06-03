@@ -13,7 +13,7 @@ export default function HomePage() {
         {/* Intro */}
         <section className="content home-intro">
           <p>
-            I study Mathematics. My academic interests
+            I study Mathematics, Physics, and Philosophy. My academic interests
             currently center on calculus and the general applications of both mathematics and physics.
           </p>
         </section>
