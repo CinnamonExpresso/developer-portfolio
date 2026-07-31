@@ -92,20 +92,6 @@ body,
   color: #1a1a1a !important;
 }
 
-[data-theme="pink"] {
-  --midnight-black: #fff5f8 !important;
-  --white-font-color: #2d1b2c !important;
-  --gray-font-color-2: #8a6b7c !important;
-  --burple-font-color: #d973b0 !important;
-  --burple-dark-font-color: #c55a9a !important;
-  --purple-font-color: #e88bc7 !important;
-  --second-purple-font-color: #d46aa8 !important;
-  --soft-border: #f0cfdf !important;
-  --scroll-bar-black: #f7dfea !important;
-  background-color: #fff5f8 !important;
-  color: #2d1b2c !important;
-}
-
 [data-theme="mint"] {
   --midnight-black: #f0faf7 !important;
   --white-font-color: #1a2e2a !important;
@@ -921,6 +907,8 @@ body {
 .home-equation span {
   transition: opacity 0.4s ease;
 }
+/*=========Published work page===========*/
+
 
 /*=========Base components===========*/
 .toggle-container {

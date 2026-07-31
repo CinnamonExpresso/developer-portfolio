@@ -31,7 +31,7 @@ export default function HomePage() {
           <div className="featured-card">
             <h3>Blog</h3>
             <p>
-              Short notes on mathematics, engineering, problem-solving, philosophy, and
+              Short notes on mathematics, problem-solving, philosophy, and
               various ideas.
             </p>
             <a href="/blog">Read posts →</a>

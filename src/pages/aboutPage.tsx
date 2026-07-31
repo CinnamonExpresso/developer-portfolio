@@ -37,7 +37,7 @@ export default function AboutPage() {
               title="Education"
               lst={[
                 "Bachleor of Science in Mathematics, minor in Physics (Honors) 2024 – 2027",
-                "Bachelor of Arts in Philosophy 2024 – 2027"
+                "Bachelor of Arts in Philosophy (Honors) 2024 – 2027"
               ]}
             />
             <SmallLst
@@ -80,7 +80,7 @@ export default function AboutPage() {
               title="Other"
               lst={[
                 "Professional writing (Technical & Scientific)",
-                "Microsoft Office",
+                "Microsoft Office (5 years)",
                 "Canva",
                 "Linux"
               ]}
@@ -89,8 +89,7 @@ export default function AboutPage() {
               title="Languages"
               lst={[
                 "English (native)",
-                "French (beginner)",
-                "Chinese (beginner)"
+                "Spanish (beginner)"
               ]}
             />
           </div>

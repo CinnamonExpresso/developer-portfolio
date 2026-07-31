@@ -49,7 +49,7 @@ const SettingsButton = () => {
           <h1>Settings</h1>
           {Array({ title: "Theme", icon: "brush" }).map((item, i) => {
             return (
-              <SettingsGuiBtn key={`setting-btn-${i}`} opt_state={theme} opt_cb={setTheme} opt={["vanillia", "mint", "pink", "white", "midnight"]} title={item.title} icon={item.icon} />
+              <SettingsGuiBtn key={`setting-btn-${i}`} opt_state={theme} opt_cb={setTheme} opt={["vanillia", "mint", "white", "midnight"]} title={item.title} icon={item.icon} />
             )
           })
           }

@@ -1,42 +1,12 @@
 
-const ProjectCard = ({
-  title,
-  desc,
-  type,
-  link,
-  other_info
-}: {
-  title: string;
-  desc: string;
-  type: string;
-  link: string;
-  other_info?: string[];
-}) => {
-  return (
-    <a href={`https://${link}`}>
-      <div className="project-card">
-        <h2>{title}</h2>
-        <p>{desc}</p>
-        <div className="project-types">
-          <span className="project-tag">{type}{other_info && " • "}</span>
-          {other_info && 
-            <div className="project-additional-types">
-              {other_info.map((item, i) => <span className="project-tag" key={i}>{item}</span>)}
-            </div>
-          }
-        </div>
-      </div>
-    </a>
-  );
-};
-
+import ProjectCard from "../components/main/projectCard";
 export default function ProjectPage() {
   return (
     <div className="page">
       <header className="page-header">
         <h1>Projects</h1>
         <p className="page-subtitle">
-          Here one can find a selection of my projects; It includes various programming, engineering, mathematical, and physics related projects (though it's not a complete list).
+          Here you can find a selection of my projects; It includes various programming, engineering, mathematical, and physics related projects (though it's not a complete list).
         </p>
       </header>
 
